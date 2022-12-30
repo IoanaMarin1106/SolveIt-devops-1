@@ -1,0 +1,10 @@
+gcp_credentials = "nice-ocean-373118-a855ab417f77.json"
+gcp_project_id = "nice-ocean-373118"
+gcp_region = "us-west1"
+gke_cluster_name = "cc-cluster"
+gke_zones = [ "us-west1-a" ]
+gke_regional = false
+gke_network = "default"
+gke_subnetwork = "default"
+gke_nodepool_name = "cc-node-pool"
+gke_service_account_name = "terraform-sa@nice-ocean-373118.iam.gserviceaccount.com"
