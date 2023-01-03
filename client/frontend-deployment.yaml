@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: public.ecr.aws/j7f6l6k4/cc-project:solveit-frontend
+        image: gcr.io/nice-ocean-373118/client-image
         ports:
         - containerPort: 3000
