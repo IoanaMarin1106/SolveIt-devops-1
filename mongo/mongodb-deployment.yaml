@@ -1,15 +1,15 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   labels:
     app: mongo
   name: mongo
 spec:
+  serviceName: "mongo"
   replicas: 1
   selector:
     matchLabels:
       app: mongo
-  strategy: {}
   template:
     metadata:
       labels:
