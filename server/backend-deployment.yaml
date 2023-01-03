@@ -1,8 +1,9 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: backend
 spec:
+  serviceName: backend
   replicas: 3
   selector:
     matchLabels:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/nice-ocean-373118/server-image:1.2
+        image: gcr.io/nice-ocean-373118/server-image:1.6
         ports:
         - containerPort: 5001

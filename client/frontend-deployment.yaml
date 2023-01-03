@@ -1,8 +1,9 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: frontend
 spec:
+  serviceName: frontend
   replicas: 3
   selector:
     matchLabels:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gcr.io/nice-ocean-373118/client-image:1.0
+        image: gcr.io/nice-ocean-373118/client-image:1.4
         ports:
         - containerPort: 3000

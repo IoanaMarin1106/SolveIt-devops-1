@@ -173,7 +173,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                 <tr>
                   <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
                     <p style="margin: 2;">Hello ${name},</p>
-                    <p style="margin: 0;">Tap the button below to activate your account. If you didn't create an account with <a href="http://localhost:3000/">SolveIt</a>, you can safely ignore and delete this email.</p>
+                    <p style="margin: 0;">Tap the button below to activate your account. If you didn't create an account with <a href="http://35.247.35.7:3000/">SolveIt</a>, you can safely ignore and delete this email.</p>
                   </td>
                 </tr>
                 <!-- end copy -->
@@ -187,7 +187,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                               <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                                <a href="http://localhost:3000/users/${id}/confirm" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Activate Account</a>
+                                <a href="http://35.247.35.7:3000/users/${id}/confirm" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Activate Account</a>
                               </td>
                             </tr>
                           </table>
@@ -432,7 +432,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                 <tr>
                   <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
                     <p style="margin: 2;">Hello ${name},</p>
-                    <p style="margin: 0;">You have successfully applied for a <a href="http://localhost:3000/">SolveIt</a> Teacher Account. In order to activate your account, you need the approval of our administrator, we already send a request for your role.</p>
+                    <p style="margin: 0;">You have successfully applied for a <a href="http://35.247.35.7:3000/">SolveIt</a> Teacher Account. In order to activate your account, you need the approval of our administrator, we already send a request for your role.</p>
                   </td>
                 </tr>
                 <!-- end copy -->
@@ -688,7 +688,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                               <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                                <a href="http://localhost:3000/users/${id}/approveTeacher" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Approve Request</a>
+                                <a href="http://35.247.35.7:3000/users/${id}/approveTeacher" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Approve Request</a>
                               </td>
                             </tr>
                           </table>
@@ -933,7 +933,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                 <tr>
                   <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
                     <p style="margin: 2;">Hello ${name},</p>
-                    <p style="margin: 0;">Your request for a <a href="http://localhost:3000/">SolveIt</a> Teacher Account has been approved.</p>
+                    <p style="margin: 0;">Your request for a <a href="http://35.247.35.7:3000/">SolveIt</a> Teacher Account has been approved.</p>
                   </td>
                 </tr>
                 <!-- end copy -->
@@ -947,7 +947,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                               <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                                <a href="http://localhost:3000/auth/login" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Log In</a>
+                                <a href="http://35.247.35.7:3000/auth/login" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Log In</a>
                               </td>
                             </tr>
                           </table>
@@ -1206,7 +1206,7 @@ export const sendStudentConfirmationMail = (name, email, id) => {
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                               <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                                <a href="http://localhost:3000/users/${id}/resetPassword" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Reset Password</a>
+                                <a href="http://35.247.35.7:3000/users/${id}/resetPassword" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Reset Password</a>
                               </td>
                             </tr>
                           </table>
