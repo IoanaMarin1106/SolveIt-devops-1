@@ -1,0 +1,22 @@
+---
+# Source: portainer/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "portainer-test-connection"
+  namespace: default  
+  labels:
+    helm.sh/chart: portainer-1.0.38
+    app.kubernetes.io/name: portainer
+    app.kubernetes.io/instance: portainer
+    app.kubernetes.io/version: "ce-latest-ee-2.16.2"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['portainer:9000']
+  restartPolicy: Never

@@ -1,0 +1,21 @@
+---
+# Source: adminer/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: adminer
+  labels:
+    app.kubernetes.io/name: adminer
+    helm.sh/chart: adminer-0.2.1
+    app.kubernetes.io/instance: adminer
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8009
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: adminer
+    app.kubernetes.io/instance: adminer
