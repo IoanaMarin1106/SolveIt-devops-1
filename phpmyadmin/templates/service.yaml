@@ -1,0 +1,28 @@
+---
+# Source: phpmyadmin/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: phpmyadmin
+  namespace: "default"
+  labels:
+    app.kubernetes.io/name: phpmyadmin
+    helm.sh/chart: phpmyadmin-10.3.8
+    app.kubernetes.io/instance: phpmyadmin
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+spec:
+  type: LoadBalancer
+  sessionAffinity: None
+  ports:
+    - name: http
+      port: 8010
+      protocol: TCP
+      targetPort: http
+    - name: https
+      port: 8011
+      protocol: TCP
+      targetPort: https
+  selector:
+    app.kubernetes.io/name: phpmyadmin
+    app.kubernetes.io/instance: phpmyadmin

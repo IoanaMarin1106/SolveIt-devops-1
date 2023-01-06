@@ -36,3 +36,6 @@ spec:
               value: pepa-linha
             - name: ADMINER_DEFAULT_SERVER
               value:
+          securityContext:
+            allowPrivilegeEscalation: false
+            runAsUser: 0
