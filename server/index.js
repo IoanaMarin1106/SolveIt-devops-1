@@ -19,7 +19,7 @@ app.use('/users', userRoutes);
 app.use('/batch', batchRoutes);
 
 // const CONNECTION_URL = 'mongodb+srv://ediciurezu:OQh9FxplF5f9GJ0m@cluster0.8g72t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-const CONNECTION_URL = 'mongodb://mongodb-0.mongodb:27017'
+const CONNECTION_URL = 'mongodb://adminuser:password123@mongo-service:27017'
 const PORT = process.env.PORT || 5001;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
