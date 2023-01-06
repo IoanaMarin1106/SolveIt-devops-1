@@ -41,7 +41,7 @@ export const getBatchesByUserIdAndProblemId = (userId, problemId) => API.get(`/b
 
 
 
-const Judge0API = axios.create({ baseURL: 'http://localhost:2358' });
+const Judge0API = axios.create({ baseURL: 'http://35.230.47.207:80' });
 
 export const addSubmission = (submissionData) => Judge0API.post('/submissions', submissionData);
 export const getSubmission = (id) => Judge0API.get(`/submissions/${id}`);
