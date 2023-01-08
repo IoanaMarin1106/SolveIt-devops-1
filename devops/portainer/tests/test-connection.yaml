@@ -1,5 +1,3 @@
----
-# Source: portainer/templates/tests/test-connection.yaml
 apiVersion: v1
 kind: Pod
 metadata:
