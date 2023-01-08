@@ -1,0 +1,35 @@
+---------------------------
+| Eduard-Claudiu Ciurezu  |
+| Ioana-Valentina Marin   |
+| Sergiu-Cristian Toader  |
+---------------------------
+
+                                Cloud Computing - Proiect
+                                --------------------------
+
+        Implementarea proiectului presupune implementarea urmatoarelor microservicii:
+    -> crearea unui deployment pentru componenta de frontend (clientul) si a unui serviciu 
+        de tipul LoadBalancer prin care se obtine un IP public si este expus portul 3000
+    -> crearea unui deployment pentru componenta de business logic (server) si a unui
+        serviciu de tipul LoadBalancer care expune portul 5001
+    -> crearea unui microserviciu pentru baza de date Mongo ce presupune urmatoarele componente:
+        - un deployment 
+        - un serviciu de tipul NodePort
+        - un Persistent Volume ca volum de stocare pentru baza de date
+        - un Persistent Volume Claim pentru a lega baza de date de volumul anterior creat
+        - username-ul si parola pentru autentificarea la baza de date sunt pastrate
+            intr-un fisiere de secrete
+
+        Deployment-ul aplicatiei se face in cadrul GCP fiind de precizat urmatoarele:
+    -> imaginile de docker pentru server si client sunt pastrate in GCP intr-un Container
+        Registry
+    -> pentru crearea infrastructurii Kubernetes este folosit Terraform si Kubernetes 
+        Engine din GCP, clusterul fiind format din doua noduri worker si un control
+        plane
+
+        In cadrul proiectului au fost integrate si urmatoarele 2 componente:
+    -> Prometheus pentru monitorizarea aplicatiei 
+    -> Portainer pentru gestiunea clusterului folosind o interfata grafica 
+
+
+    
